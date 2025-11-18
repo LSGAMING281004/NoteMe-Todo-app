@@ -1,0 +1,102 @@
+/* App.css */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.heading {
+  
+  text-align: center;
+  color: #3dcef7;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #7c3aed;
+}
+
+.button {
+  padding: 0 1.25rem;
+  background-color: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #5b21b6;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todo-title {
+  flex-grow: 1;
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.todo-title.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-button {
+  margin-left: 1rem;
+  background-color: #ef4444;
+  border: none;
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
+}
