@@ -6,7 +6,7 @@ export default function App() {
   const [todos, setTodos] = useState([]);
   const [newTitle, setNewTitle] = useState('');
 
-  const apiUrl = 'http://localhost:8080/api/todos';
+  const apiUrl = 'https://noteme-todo-backend-production.up.railway.app/';
 
   useEffect(() => {
     axios.get(apiUrl)
