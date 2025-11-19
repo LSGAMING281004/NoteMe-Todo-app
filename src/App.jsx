@@ -6,7 +6,20 @@ export default function App() {
   const [todos, setTodos] = useState([]);
   const [newTitle, setNewTitle] = useState('');
 
-  const apiUrl = 'https://noteme-todo-backend-production.up.railway.app/';
+  const apiUrl = 'https://noteme-todo-backend-production.up.railway.app/api/todos';
+
+// ... rest of your code stays the same
+const [error, setError] = useState(null);
+
+useEffect(() => {
+  axios.get(apiUrl)
+    .then(res => setTodos(res.data))
+    .catch(err => {
+      setError("Failed to fetch todos!");
+      console.error(err);
+    });
+}, []);
+
 
   useEffect(() => {
     axios.get(apiUrl)
